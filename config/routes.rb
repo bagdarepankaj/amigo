@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   devise_scope :user do
     get 'login', to: 'devise/sessions#new'
-    get 'sign_up', to: 'device/registrations#new'
+    get 'signup', to: 'device/registrations#new'
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'pages#index'
